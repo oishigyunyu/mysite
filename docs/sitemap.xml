@@ -2,11 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://oishigyunyu.github.io/mysite/</loc>
+    <lastmod>2021-07-01T22:52:22+09:00</lastmod>
+  </url><url>
+    <loc>https://oishigyunyu.github.io/mysite/projects/</loc>
+    <lastmod>2021-07-01T22:52:22+09:00</lastmod>
+  </url><url>
+    <loc>https://oishigyunyu.github.io/mysite/projects/projects/</loc>
+    <lastmod>2021-07-01T22:52:22+09:00</lastmod>
+  </url><url>
+    <loc>https://oishigyunyu.github.io/mysite/contact/contact/</loc>
+    <lastmod>2021-07-01T22:50:36+09:00</lastmod>
+  </url><url>
+    <loc>https://oishigyunyu.github.io/mysite/contact/</loc>
+    <lastmod>2021-07-01T22:50:36+09:00</lastmod>
+  </url><url>
+    <loc>https://oishigyunyu.github.io/mysite/about/about/</loc>
+    <lastmod>2021-07-01T22:27:44+09:00</lastmod>
+  </url><url>
+    <loc>https://oishigyunyu.github.io/mysite/about/</loc>
+    <lastmod>2021-07-01T22:27:44+09:00</lastmod>
+  </url><url>
+    <loc>https://oishigyunyu.github.io/mysite/posts/my-first-post/</loc>
+    <lastmod>2021-06-15T21:05:56+09:00</lastmod>
+  </url><url>
+    <loc>https://oishigyunyu.github.io/mysite/posts/</loc>
+    <lastmod>2021-06-15T21:05:56+09:00</lastmod>
+  </url><url>
     <loc>https://oishigyunyu.github.io/mysite/authors/</loc>
   </url><url>
     <loc>https://oishigyunyu.github.io/mysite/categories/</loc>
-  </url><url>
-    <loc>https://oishigyunyu.github.io/mysite/</loc>
   </url><url>
     <loc>https://oishigyunyu.github.io/mysite/series/</loc>
   </url><url>

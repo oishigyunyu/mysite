@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contacts on oishigyunyu</title>
+    <link>https://oishigyunyu.github.io/mysite/contact/</link>
+    <description>Recent content in Contacts on oishigyunyu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jul 2021 22:50:36 +0900</lastBuildDate><atom:link href="https://oishigyunyu.github.io/mysite/contact/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>https://oishigyunyu.github.io/mysite/contact/contact/</link>
+      <pubDate>Thu, 01 Jul 2021 22:50:36 +0900</pubDate>
+      
+      <guid>https://oishigyunyu.github.io/mysite/contact/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
