@@ -4,6 +4,7 @@ title = "oishigyunyu"
 theme = "hugo-coder"
 publishDir = "docs"
 canonifyurls = true
+googleAnalytics = "G-Q7EWTC7BR1"
 
 
 [params]
