@@ -44,13 +44,10 @@ class MyApp extends ConsumerWidget {
       theme: _buildTheme(Brightness.light),
       darkTheme: _buildTheme(Brightness.dark),
       themeMode: ref.watch(themeModeProvider),
-      builder: (context, child) =>
-          PrimerApp(
-            parentBrightness: Theme
-                .of(context)
-                .brightness,
-            child: child!,
-          ),
+      builder: (context, child) => PrimerApp(
+        parentBrightness: Theme.of(context).brightness,
+        child: child!,
+      ),
       home: const HomeView(),
     );
   }
@@ -61,16 +58,15 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery
-        .of(context)
-        .size;
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('oishigyunyu\'s page'),
-        backgroundColor: Theme
-            .of(context)
-            .colorScheme
-            .background,
+        title: Text(
+          'oishigyunyu\'s page',
+          style: Theme.of(context).textTheme.titleLarge?.apply(
+                color: Theme.of(context).colorScheme.primary,
+              ),
+        ),
         actions: const [
           ThemeModeButton(),
         ],
@@ -79,10 +75,7 @@ class HomeView extends StatelessWidget {
         child: Container(
           width: size.width,
           height: size.height,
-          color: Theme
-              .of(context)
-              .colorScheme
-              .background,
+          color: Theme.of(context).colorScheme.background,
           child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -94,10 +87,7 @@ class HomeView extends StatelessWidget {
                   height: size.height / 2,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    color: Theme
-                        .of(context)
-                        .colorScheme
-                        .primary,
+                    color: Theme.of(context).colorScheme.primary,
                     shape: BoxShape.circle,
                   ),
                   child: FractionallySizedBox(
@@ -108,24 +98,20 @@ class HomeView extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text('oishigyunyu', style: Theme
-                    .of(context)
-                    .textTheme
-                    .displayLarge
-                    ?.apply(color: Theme
-                    .of(context)
-                    .colorScheme
-                    .onBackground,),
+                Text(
+                  'oishigyunyu',
+                  style: Theme.of(context).textTheme.displayLarge?.apply(
+                        color: Theme.of(context).colorScheme.onBackground,
+                      ),
                 ),
-                const SizedBox(height: 8.0,),
-                Text('Japanese developer', style: Theme
-                    .of(context)
-                    .textTheme
-                    .displaySmall
-                    ?.apply(color: Theme
-                    .of(context)
-                    .colorScheme
-                    .onBackground,),
+                const SizedBox(
+                  height: 8.0,
+                ),
+                Text(
+                  'Japanese developer',
+                  style: Theme.of(context).textTheme.displaySmall?.apply(
+                        color: Theme.of(context).colorScheme.onBackground,
+                      ),
                 ),
               ],
             ),
@@ -141,30 +127,31 @@ class ThemeModeButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final toggle = ref
-        .read(themeModeProvider.notifier)
-        .toggle;
+    final toggle = ref.read(themeModeProvider.notifier).toggle;
 
     switch (ref.watch(themeModeProvider)) {
       case (ThemeMode.light):
         return IconButton(
           onPressed: toggle,
-          icon: const Icon(
+          icon: Icon(
             Icons.wb_sunny_outlined,
+            color: Theme.of(context).colorScheme.primary,
           ),
         );
       case (ThemeMode.dark):
         return IconButton(
           onPressed: toggle,
-          icon: const Icon(
+          icon: Icon(
             Icons.nightlight_outlined,
+            color: Theme.of(context).colorScheme.primary,
           ),
         );
       case (ThemeMode.system):
         return IconButton(
           onPressed: toggle,
-          icon: const Icon(
-            Icons.smartphone_outlined,
+          icon: Icon(
+            Icons.wb_sunny_outlined,
+            color: Theme.of(context).colorScheme.primary,
           ),
         );
     }
