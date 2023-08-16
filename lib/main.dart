@@ -3,10 +3,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mysite/utils/shared_preferences_instance.dart';
 import 'package:mysite/utils/theme_mode_provider.dart';
 import 'package:primer_flutter/primer_flutter.dart';
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SharedPreferencesInstance.initialize();
+  setUrlStrategy(PathUrlStrategy());
 
   runApp(
     const ProviderScope(
